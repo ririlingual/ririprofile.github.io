@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>守田凜々佳のホームページ</title>
+		<!----- JAVASCRIPT START ------------------------------------>	
+		<script>
+			window.addEventListener('load', function () {
+				document.getElementById('nameBox').style.fontSize = "100px";
+			})
+
+		</script>
+		<!----- JAVASCRIPT END ------------------------------------>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!----- CSS STUFF START ------------------------------------>	
+		<style>
+			#background-pic{
+				position: fixed;
+				top: 0;
+				display: block;
+				width: 100vw;
+				height:100vh;
+				background-image: url('images/homedark.jpg');
+				
+				margin:0;
+				padding:0;
+				background-size:cover;
+				z-index: -1000;
+			}
+			@font-face {
+			  font-family: 'yantyapop';
+			  src: url('YanchaPop_JItabata-Regular.otf');
+			}
+			*{
+				margin: 0;
+				padding:0;
+				font-family: yantyapop;
+			}
+			#home{
+				display: block;
+				width: 100vw;
+				height:100vh;
+				background-image: url('images/home.jpg');
+				margin:0;
+				padding:0;
+				background-size:cover;
+			}
+			#nameBox{
+				width: 100%;
+				text-align: center;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 20px;
+				color: #fff;
+				text-decoration: bold;
+				transition:all 0.6s cubic-bezier(1, 1, 0.4, 1.6);
+				transform: translate(-50%, -50%);
+    			-webkit-transform: translate(-50%, -50%);
+    			-ms-transform: translate(-50%, -50%);
+    			text-shadow: 2px 2px 0 #000,
+             -2px 2px 0 #000,
+             2px -2px 0 #000,
+             -2px -2px 0 #000;
+             text-shadow: 2px 2px 1px #000,
+             -2px 2px 1px #000,
+             2px -2px 1px #000,
+             -2px -2px 1px #000;
+			}
+			#header{
+				display:block;
+				width: 100vw;
+				margin: none;
+				height: 60px;
+				background-color: #222;
+				box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+			}
+			.headerlink{
+				display: block;
+				width: 19vw;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				text-align: center;
+				text-decoration:none;
+				color:#fff;
+				float: left;
+			}
+			.headerlink:hover{
+				background-color:#444;
+			}
+		</style>
+	<!----- CSS STUFF END ------------------------------------>	
+	</head>
+	<body>
+		<div id='background-pic'>
+		</div>
+		<div id='home'>
+			<div id='header'>
+				<a class='headerlink' href='index.html'>Home</a>
+				<a class='headerlink' href='highschool.html'>Highschool</a>
+				<a class='headerlink' href='club.html'>Club</a>
+				<a class='headerlink' href='music.html'>Music</a>
+				<a class='headerlink' href='profile.html'>Profile</a>
+			</div>
+			<div id='nameBox'>
+				Ririka Morita
+			</div>
+		</div>
+		<div>
+
+		</div>
+	</body>
+</html>
